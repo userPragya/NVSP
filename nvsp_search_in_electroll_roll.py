@@ -15,7 +15,7 @@ def waitfor(myxpath,sec,element):
             print(element)
 
 
-driver = webdriver.Chrome("C:\Python27\chromedriver")
+driver = webdriver.Chrome("C:\Python27\chromedriver") #enter your chrome driver path here
 driver.get("https://www.nvsp.in/")
 
 
@@ -24,8 +24,8 @@ search = driver.get("http://electoralsearch.in/")
 continue1 = driver.find_element_by_id("continue")
 continue1.click()
 
-name = "Pragati"
-fname = "Pandurang"
+name = "Pragati" #enter name to be searched in electrol roll
+fname = "Pandurang" #father's name
 tname = driver.find_element_by_id("name1")
 tname.send_keys(name)
 tname.send_keys(Keys.RETURN)
